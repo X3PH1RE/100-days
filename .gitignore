@@ -19,3 +19,6 @@ gen/
 out/
 *.log
 .kotlin/
+gradle-*-out.txt
+*.apk
+*.aab
