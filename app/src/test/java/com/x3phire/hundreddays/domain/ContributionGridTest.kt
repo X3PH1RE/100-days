@@ -38,6 +38,23 @@ class ContributionGridTest {
     }
 
     @Test
+    fun weekColumns_areMondayAlignedAndSevenTall() {
+        val today = DayKey.from(LocalDate.of(2026, 1, 3))
+        val model = ContributionGrid.project(settings, emptyMap(), today)
+        val weeks = model.asWeekColumns()
+        // 2026-01-01 Thursday through 2026-01-05 Monday spans two week columns.
+        assertEquals(2, weeks.size)
+        assertEquals(7, weeks[0].slots.size)
+        assertEquals(WeekSlot.Padding, weeks[0].slots[0])
+        assertEquals(WeekSlot.Padding, weeks[0].slots[1])
+        assertEquals(WeekSlot.Padding, weeks[0].slots[2])
+        val thursday = weeks[0].slots[3] as WeekSlot.Day
+        assertEquals(LocalDate.of(2026, 1, 1), thursday.cell.day.value)
+        val monday = weeks[1].slots[0] as WeekSlot.Day
+        assertEquals(LocalDate.of(2026, 1, 5), monday.cell.day.value)
+    }
+
+    @Test
     fun daysLeft_inclusiveAndClamped() {
         val endInclusive = DayKey.from(LocalDate.of(2026, 1, 10))
         assertEquals(

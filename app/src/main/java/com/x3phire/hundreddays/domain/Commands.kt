@@ -59,6 +59,10 @@ sealed interface Rejection {
     data class EntryNotFound(val target: EntryRef) : Rejection {
         override val userMessage: String = "That entry no longer exists."
     }
+
+    data object FutureDay : Rejection {
+        override val userMessage: String = "Future days are for looking ahead only. Add notes on or before today."
+    }
 }
 
 sealed interface CommandResult {

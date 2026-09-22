@@ -46,6 +46,7 @@ internal class DefaultJournalService(
         }
 
     private suspend fun addEntry(command: AddEntry): CommandResult {
+        rejectIfFuture(command.day)?.let { return it }
         val text = when (val parsed = EntryText.parse(command.draft.text)) {
             EntryTextParse.Blank -> return CommandResult.Rejected(Rejection.BlankEntry)
             is EntryTextParse.TooLong ->
@@ -63,6 +64,7 @@ internal class DefaultJournalService(
     }
 
     private suspend fun editEntry(command: EditEntry): CommandResult {
+        rejectIfFuture(command.target.day)?.let { return it }
         val text = when (val parsed = EntryText.parse(command.draft.text)) {
             EntryTextParse.Blank -> return CommandResult.Rejected(Rejection.BlankEntry)
             is EntryTextParse.TooLong ->
@@ -77,6 +79,9 @@ internal class DefaultJournalService(
             ),
         ).toCommandResult()
     }
+
+    private fun rejectIfFuture(day: DayKey): CommandResult? =
+        if (day > clock.today()) CommandResult.Rejected(Rejection.FutureDay) else null
 
     private suspend fun deleteEntry(command: DeleteEntry): CommandResult =
         journals.apply(JournalMutation.Delete(command.target)).toCommandResult()

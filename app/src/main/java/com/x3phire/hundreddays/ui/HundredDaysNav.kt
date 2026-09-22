@@ -2,6 +2,7 @@ package com.x3phire.hundreddays.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -30,6 +31,7 @@ object Routes {
 fun HundredDaysNav(
     service: JournalService,
     navController: NavHostController = rememberNavController(),
+    modifier: Modifier = Modifier,
 ) {
     val challenge by service.observeChallenge().collectAsStateWithLifecycle(
         initialValue = ChallengeState.NotConfigured,
@@ -38,6 +40,7 @@ fun HundredDaysNav(
     NavHost(
         navController = navController,
         startDestination = Routes.HOME,
+        modifier = modifier,
     ) {
         composable(Routes.HOME) {
             when (val state = challenge) {

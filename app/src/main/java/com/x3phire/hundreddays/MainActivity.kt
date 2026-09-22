@@ -6,12 +6,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.Modifier
 import androidx.core.util.Consumer
 import androidx.navigation.compose.rememberNavController
 import com.x3phire.hundreddays.ui.HundredDaysNav
+import com.x3phire.hundreddays.ui.theme.AppBackground
 import com.x3phire.hundreddays.ui.theme.HundredDaysTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         val service = (application as HundredDaysApp).container.journalService
         setContent {
             HundredDaysTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
+                AppBackground {
                     val navController = rememberNavController()
                     DisposableEffect(navController) {
                         val listener = Consumer<Intent> { incoming ->
@@ -34,6 +34,7 @@ class MainActivity : ComponentActivity() {
                     HundredDaysNav(
                         service = service,
                         navController = navController,
+                        modifier = Modifier.fillMaxSize(),
                     )
                 }
             }

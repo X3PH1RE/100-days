@@ -7,11 +7,14 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerDialog
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberDatePickerState
@@ -31,6 +34,8 @@ import com.x3phire.hundreddays.domain.SetRange
 import java.time.Instant
 import java.time.LocalDate
 import java.time.ZoneOffset
+import java.time.format.DateTimeFormatter
+import java.time.temporal.ChronoUnit
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -43,26 +48,42 @@ fun OnboardingScreen(service: JournalService) {
     var error by remember { mutableStateOf<String?>(null) }
     var pickingStart by remember { mutableStateOf(false) }
     var pickingEnd by remember { mutableStateOf(false) }
+    val pretty = remember { DateTimeFormatter.ofPattern("MMM d, yyyy") }
+    val totalDays = ChronoUnit.DAYS.between(start, end).toInt() + 1
 
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+            .statusBarsPadding()
+            .padding(horizontal = 24.dp, vertical = 20.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
-        Text("100 Days", style = MaterialTheme.typography.headlineLarge)
+        Text("100 Days", style = MaterialTheme.typography.displayLarge)
         Text(
-            "Pick the inclusive start and end of your challenge.",
+            "Set the window. Your home screen will fill like a contribution graph.",
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
         Spacer(Modifier.height(8.dp))
-        TextButton(onClick = { pickingStart = true }, modifier = Modifier.fillMaxWidth()) {
-            Text("Start: $start")
+        OutlinedButton(
+            onClick = { pickingStart = true },
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(14.dp),
+        ) {
+            Text("Starts  ${start.format(pretty)}")
         }
-        TextButton(onClick = { pickingEnd = true }, modifier = Modifier.fillMaxWidth()) {
-            Text("End: $end")
+        OutlinedButton(
+            onClick = { pickingEnd = true },
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(14.dp),
+        ) {
+            Text("Ends  ${end.format(pretty)}")
         }
+        Text(
+            text = if (totalDays > 0) "$totalDays days in range" else "Pick an end date on or after the start",
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.primary,
+        )
         error?.let {
             Text(it, color = MaterialTheme.colorScheme.error)
         }
@@ -74,7 +95,7 @@ fun OnboardingScreen(service: JournalService) {
                         SetRange(
                             start = DayKey.from(start),
                             endInclusive = DayKey.from(end),
-                            columns = 10,
+                            columns = 7,
                             daysLeftCorner = DaysLeftCorner.TOP_END,
                         ),
                     )
@@ -84,9 +105,12 @@ fun OnboardingScreen(service: JournalService) {
                     }
                 }
             },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(52.dp),
+            shape = RoundedCornerShape(16.dp),
         ) {
-            Text("Start challenge")
+            Text("Begin")
         }
     }
 
