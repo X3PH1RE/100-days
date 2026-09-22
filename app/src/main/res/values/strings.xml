@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">100 Days</string>
+    <string name="widget_label">100 Days grid</string>
+    <string name="widget_description">Contribution grid for your challenge window.</string>
+    <string name="widget_loading">100 Days</string>
 </resources>

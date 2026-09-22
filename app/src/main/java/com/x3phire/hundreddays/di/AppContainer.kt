@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.x3phire.hundreddays.data.AppDatabase
 import com.x3phire.hundreddays.data.DataStoreChallengeSettingsStore
-import com.x3phire.hundreddays.data.NoOpGridInvalidator
+import com.x3phire.hundreddays.data.GlanceGridInvalidator
 import com.x3phire.hundreddays.data.RoomJournalStore
 import com.x3phire.hundreddays.data.SystemLocalClock
 import com.x3phire.hundreddays.domain.DefaultJournalService
@@ -23,6 +23,6 @@ class AppContainer(context: Context) {
             journals = RoomJournalStore(database.entryDao()),
             settings = DataStoreChallengeSettingsStore(appContext),
             clock = SystemLocalClock(),
-            invalidator = NoOpGridInvalidator(),
+            invalidator = GlanceGridInvalidator(appContext),
         )
 }
