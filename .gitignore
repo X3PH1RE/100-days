@@ -22,3 +22,9 @@ out/
 gradle-*-out.txt
 *.apk
 *.aab
+
+# graphify machine-local
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.needs_update

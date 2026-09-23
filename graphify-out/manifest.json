@@ -1,0 +1,302 @@
+{
+  "app/build.gradle.kts": {
+    "mtime": 1790089706.441247,
+    "seen": 1790135944.24592,
+    "ast_hash": "83d0a7c9c7010b8dbd6dedc1e2d8270d",
+    "semantic_hash": "83d0a7c9c7010b8dbd6dedc1e2d8270d"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/HundredDaysApp.kt": {
+    "mtime": 1790090454.4368236,
+    "seen": 1790135944.24592,
+    "ast_hash": "e52065261dbf41190c6e273cd235994d",
+    "semantic_hash": "e52065261dbf41190c6e273cd235994d"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/MainActivity.kt": {
+    "mtime": 1790090843.050653,
+    "seen": 1790135944.24592,
+    "ast_hash": "bae7fba9362f0052c07eaf678dbe0674",
+    "semantic_hash": "bae7fba9362f0052c07eaf678dbe0674"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/AppDatabase.kt": {
+    "mtime": 1790087861.4866076,
+    "seen": 1790135944.24592,
+    "ast_hash": "726e4d727a40382bcc94f0b7121f44e0",
+    "semantic_hash": "726e4d727a40382bcc94f0b7121f44e0"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/DataStoreChallengeSettingsStore.kt": {
+    "mtime": 1790087869.2170372,
+    "seen": 1790135944.24592,
+    "ast_hash": "ca747609e0d7ef710de05916e63263c3",
+    "semantic_hash": "ca747609e0d7ef710de05916e63263c3"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/EntryDao.kt": {
+    "mtime": 1790087849.749002,
+    "seen": 1790135944.24592,
+    "ast_hash": "bff323eb99ae863403efe148587edce2",
+    "semantic_hash": "bff323eb99ae863403efe148587edce2"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/EntryEntity.kt": {
+    "mtime": 1790087848.516714,
+    "seen": 1790135944.24592,
+    "ast_hash": "48c3b865acfa943cf9c2e468d98709d7",
+    "semantic_hash": "48c3b865acfa943cf9c2e468d98709d7"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/GlanceGridInvalidator.kt": {
+    "mtime": 1790090454.4379008,
+    "seen": 1790135944.24592,
+    "ast_hash": "7ed3871e00482193031be0eca7e6d041",
+    "semantic_hash": "7ed3871e00482193031be0eca7e6d041"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/RoomJournalStore.kt": {
+    "mtime": 1790087973.1903243,
+    "seen": 1790135944.24592,
+    "ast_hash": "d398717a8f7b721430ae86a0bf127b89",
+    "semantic_hash": "d398717a8f7b721430ae86a0bf127b89"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/data/SystemLocalClock.kt": {
+    "mtime": 1790087874.4012861,
+    "seen": 1790135944.24592,
+    "ast_hash": "2d94e89708786528ebae97ba34b000e9",
+    "semantic_hash": "2d94e89708786528ebae97ba34b000e9"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/di/AppContainer.kt": {
+    "mtime": 1790090454.4400592,
+    "seen": 1790135944.24592,
+    "ast_hash": "661908a8466abe61c10d2f11aa5a31c6",
+    "semantic_hash": "661908a8466abe61c10d2f11aa5a31c6"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/Challenge.kt": {
+    "mtime": 1790087793.8752387,
+    "seen": 1790135944.246639,
+    "ast_hash": "3288eb937b524ae8d2a32ea96be95289",
+    "semantic_hash": "3288eb937b524ae8d2a32ea96be95289"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/Commands.kt": {
+    "mtime": 1790090725.957976,
+    "seen": 1790135944.246639,
+    "ast_hash": "f7c0662af3dc269b0281aeed3e920a8a",
+    "semantic_hash": "f7c0662af3dc269b0281aeed3e920a8a"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/ContributionGrid.kt": {
+    "mtime": 1790090719.4474926,
+    "seen": 1790135944.246639,
+    "ast_hash": "467f684714206c09f10fb4fe2624d1d2",
+    "semantic_hash": "467f684714206c09f10fb4fe2624d1d2"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/DayKey.kt": {
+    "mtime": 1790087792.6888945,
+    "seen": 1790135944.246639,
+    "ast_hash": "b59ac62d738fb30ae975ca612025633e",
+    "semantic_hash": "b59ac62d738fb30ae975ca612025633e"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/DayPhase.kt": {
+    "mtime": 1790087799.123027,
+    "seen": 1790135944.246639,
+    "ast_hash": "bd1c905c4fc805b6f5e17f1856a136b8",
+    "semantic_hash": "bd1c905c4fc805b6f5e17f1856a136b8"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/EntryId.kt": {
+    "mtime": 1790087797.120127,
+    "seen": 1790135944.246639,
+    "ast_hash": "dce6bec3405165027136bda960d9a47b",
+    "semantic_hash": "dce6bec3405165027136bda960d9a47b"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/EntryText.kt": {
+    "mtime": 1790087797.120127,
+    "seen": 1790135944.246639,
+    "ast_hash": "8faef4c368493147c4fe3f7621ba7466",
+    "semantic_hash": "8faef4c368493147c4fe3f7621ba7466"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/Intensity.kt": {
+    "mtime": 1790087797.120127,
+    "seen": 1790135944.246639,
+    "ast_hash": "86fdad3abc146bdf0dad9f0ec9cde655",
+    "semantic_hash": "86fdad3abc146bdf0dad9f0ec9cde655"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/JournalModels.kt": {
+    "mtime": 1790087797.1855583,
+    "seen": 1790135944.246639,
+    "ast_hash": "82a8f0002a11402b66a345563617b763",
+    "semantic_hash": "82a8f0002a11402b66a345563617b763"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/JournalService.kt": {
+    "mtime": 1790090746.7590778,
+    "seen": 1790135944.246639,
+    "ast_hash": "ac0d81d234fb636c72e419b3bb0ce8f2",
+    "semantic_hash": "ac0d81d234fb636c72e419b3bb0ce8f2"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/domain/Ports.kt": {
+    "mtime": 1790087820.3609314,
+    "seen": 1790135944.246639,
+    "ast_hash": "2eed0425f18a4181ad0e7ffea71a1e72",
+    "semantic_hash": "2eed0425f18a4181ad0e7ffea71a1e72"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/refresh/BootCompletedReceiver.kt": {
+    "mtime": 1790090454.442248,
+    "seen": 1790135944.246639,
+    "ast_hash": "c6b7fc8e3ebef9d1139fea25bb411e18",
+    "semantic_hash": "c6b7fc8e3ebef9d1139fea25bb411e18"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/refresh/MidnightRefreshWorker.kt": {
+    "mtime": 1790090454.4438689,
+    "seen": 1790135944.246639,
+    "ast_hash": "03f884d29e8659b4dd1fcb1567404a30",
+    "semantic_hash": "03f884d29e8659b4dd1fcb1567404a30"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/HundredDaysNav.kt": {
+    "mtime": 1790090872.96832,
+    "seen": 1790135944.246639,
+    "ast_hash": "053bc2a63ba30d88969b20cfc488b058",
+    "semantic_hash": "053bc2a63ba30d88969b20cfc488b058"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/day/DayScreen.kt": {
+    "mtime": 1790090828.842049,
+    "seen": 1790135944.246639,
+    "ast_hash": "c691cbf13dcd634cf2421a242e0c722d",
+    "semantic_hash": "c691cbf13dcd634cf2421a242e0c722d"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/grid/GridScreen.kt": {
+    "mtime": 1790091102.7269392,
+    "seen": 1790135944.246639,
+    "ast_hash": "bcfe86f9b700a6189c2c0f355cc7a13e",
+    "semantic_hash": "bcfe86f9b700a6189c2c0f355cc7a13e"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/onboarding/OnboardingScreen.kt": {
+    "mtime": 1790090874.1428447,
+    "seen": 1790135944.246639,
+    "ast_hash": "c7c65f5875125b67c69a3bb2136442a0",
+    "semantic_hash": "c7c65f5875125b67c69a3bb2136442a0"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/settings/SettingsScreen.kt": {
+    "mtime": 1790087967.0543892,
+    "seen": 1790135944.246639,
+    "ast_hash": "651f8f0056ef8cda269d66df1b70d085",
+    "semantic_hash": "651f8f0056ef8cda269d66df1b70d085"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/ui/theme/Theme.kt": {
+    "mtime": 1790090785.2811458,
+    "seen": 1790135944.246639,
+    "ast_hash": "8bec52939b926d2739c18661837eb8eb",
+    "semantic_hash": "8bec52939b926d2739c18661837eb8eb"
+  },
+  "app/src/main/java/com/x3phire/hundreddays/widget/ContributionGridWidget.kt": {
+    "mtime": 1790090890.659251,
+    "seen": 1790135944.246639,
+    "ast_hash": "11dba6635cb36ac0c788d652ddb8e544",
+    "semantic_hash": "11dba6635cb36ac0c788d652ddb8e544"
+  },
+  "app/src/test/java/com/x3phire/hundreddays/domain/ChallengeWindowTest.kt": {
+    "mtime": 1790087825.4438806,
+    "seen": 1790135944.246639,
+    "ast_hash": "d81b4333b4fefd53e0847398458cbde9",
+    "semantic_hash": "d81b4333b4fefd53e0847398458cbde9"
+  },
+  "app/src/test/java/com/x3phire/hundreddays/domain/ContributionGridTest.kt": {
+    "mtime": 1790091208.1967218,
+    "seen": 1790135944.246639,
+    "ast_hash": "dc6503638da05d9c665372d58347cfb9",
+    "semantic_hash": "dc6503638da05d9c665372d58347cfb9"
+  },
+  "app/src/test/java/com/x3phire/hundreddays/domain/IntensityTest.kt": {
+    "mtime": 1790087832.1589,
+    "seen": 1790135944.246639,
+    "ast_hash": "d6fcdf5f934bb8c1dd8d7147f3a24889",
+    "semantic_hash": "d6fcdf5f934bb8c1dd8d7147f3a24889"
+  },
+  "app/src/test/java/com/x3phire/hundreddays/refresh/MidnightRefreshWorkerTest.kt": {
+    "mtime": 1790090454.4548087,
+    "seen": 1790135944.246639,
+    "ast_hash": "c39321570bdb305628dfff0f82750e1e",
+    "semantic_hash": "c39321570bdb305628dfff0f82750e1e"
+  },
+  "build.gradle.kts": {
+    "mtime": 1790086833.2228358,
+    "seen": 1790135944.246639,
+    "ast_hash": "75d5f937f407e2415074058bc5afd317",
+    "semantic_hash": "75d5f937f407e2415074058bc5afd317"
+  },
+  "docs/design/arena-candidate-a/TYPES.kt": {
+    "mtime": 1790087239.8015325,
+    "seen": 1790135944.246639,
+    "ast_hash": "4b5aadf5ea63c56a031121c89264216a",
+    "semantic_hash": "4b5aadf5ea63c56a031121c89264216a"
+  },
+  "docs/design/arena-candidate-b/TYPES.kt": {
+    "mtime": 1790087236.7672348,
+    "seen": 1790135944.246639,
+    "ast_hash": "bc947afea10ec3c0146175b5eb4533a4",
+    "semantic_hash": "bc947afea10ec3c0146175b5eb4533a4"
+  },
+  "gradlew": {
+    "mtime": 1790087348.7435272,
+    "seen": 1790135944.246639,
+    "ast_hash": "f092910dfa8e47c5a37a452c3f6baf8a",
+    "semantic_hash": "f092910dfa8e47c5a37a452c3f6baf8a"
+  },
+  "settings.gradle.kts": {
+    "mtime": 1790086833.2258937,
+    "seen": 1790135944.246639,
+    "ast_hash": "e43c4eb07897e9af4401c820d5ef50d5",
+    "semantic_hash": "e43c4eb07897e9af4401c820d5ef50d5"
+  },
+  "README.md": {
+    "mtime": 1790087506.5216043,
+    "seen": 1790135944.246639,
+    "ast_hash": "ff911b4f9138fbd55e82ff587c2577a0",
+    "semantic_hash": "ff911b4f9138fbd55e82ff587c2577a0"
+  },
+  "docs/design/ARENA_FRAME.md": {
+    "mtime": 1790086807.2903645,
+    "seen": 1790135944.246639,
+    "ast_hash": "383f14d38242c4302bbb5b344130dc70",
+    "semantic_hash": "383f14d38242c4302bbb5b344130dc70"
+  },
+  "docs/design/GROUNDING.md": {
+    "mtime": 1790086781.4447832,
+    "seen": 1790135944.246639,
+    "ast_hash": "690bcc2fd154d88e68d7c7a00b0dbb33",
+    "semantic_hash": "690bcc2fd154d88e68d7c7a00b0dbb33"
+  },
+  "docs/design/SYNTHESIS.md": {
+    "mtime": 1790087466.9358172,
+    "seen": 1790135944.246639,
+    "ast_hash": "76cc1ff822f2fde8a53b6b461eb122ab",
+    "semantic_hash": "76cc1ff822f2fde8a53b6b461eb122ab"
+  },
+  "docs/design/arena-candidate-a/MODULES.md": {
+    "mtime": 1790087276.5753052,
+    "seen": 1790135944.246639,
+    "ast_hash": "c93cc786a97f0c8d8f06ccbfda5a10ec",
+    "semantic_hash": "c93cc786a97f0c8d8f06ccbfda5a10ec"
+  },
+  "docs/design/arena-candidate-a/RATIONALE.md": {
+    "mtime": 1790087335.9400127,
+    "seen": 1790135944.246639,
+    "ast_hash": "91912bd2ad46e559435df70e1267c064",
+    "semantic_hash": "91912bd2ad46e559435df70e1267c064"
+  },
+  "docs/design/arena-candidate-a/USAGE.md": {
+    "mtime": 1790087120.2430952,
+    "seen": 1790135944.246639,
+    "ast_hash": "d139f4994d53f3c165aed1afc4deb4d8",
+    "semantic_hash": "d139f4994d53f3c165aed1afc4deb4d8"
+  },
+  "docs/design/arena-candidate-b/MODULES.md": {
+    "mtime": 1790087222.0853734,
+    "seen": 1790135944.246639,
+    "ast_hash": "157af6654676ce206ad1e79ac284157c",
+    "semantic_hash": "157af6654676ce206ad1e79ac284157c"
+  },
+  "docs/design/arena-candidate-b/RATIONALE.md": {
+    "mtime": 1790087213.7610433,
+    "seen": 1790135944.246639,
+    "ast_hash": "eea2470dbe65ceeb52e719f463708b6a",
+    "semantic_hash": "eea2470dbe65ceeb52e719f463708b6a"
+  },
+  "docs/design/arena-candidate-b/USAGE.md": {
+    "mtime": 1790087054.8010764,
+    "seen": 1790135944.246639,
+    "ast_hash": "a648c95f00bb827e00cac3fca439724e",
+    "semantic_hash": "a648c95f00bb827e00cac3fca439724e"
+  }
+}
