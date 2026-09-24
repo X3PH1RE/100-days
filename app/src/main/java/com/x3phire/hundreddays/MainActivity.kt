@@ -18,7 +18,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val service = (application as HundredDaysApp).container.journalService
+        val container = (application as HundredDaysApp).container
+        val service = container.journalService
+        val transcriptCleaner = container.transcriptCleaner
         setContent {
             HundredDaysTheme {
                 AppBackground {
@@ -35,6 +37,7 @@ class MainActivity : ComponentActivity() {
                         service = service,
                         navController = navController,
                         modifier = Modifier.fillMaxSize(),
+                        transcriptCleaner = transcriptCleaner,
                     )
                 }
             }

@@ -32,6 +32,8 @@ fun HundredDaysNav(
     service: JournalService,
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier,
+    transcriptCleaner: com.x3phire.hundreddays.domain.TranscriptCleaner =
+        com.x3phire.hundreddays.domain.RuleBasedTranscriptCleaner(),
 ) {
     val challenge by service.observeChallenge().collectAsStateWithLifecycle(
         initialValue = ChallengeState.NotConfigured,
@@ -79,6 +81,7 @@ fun HundredDaysNav(
                     day = day,
                     service = service,
                     onBack = { navController.popBackStack() },
+                    transcriptCleaner = transcriptCleaner,
                 )
             }
         }

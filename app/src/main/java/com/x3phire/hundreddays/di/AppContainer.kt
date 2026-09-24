@@ -25,4 +25,7 @@ class AppContainer(context: Context) {
             clock = SystemLocalClock(),
             invalidator = GlanceGridInvalidator(appContext),
         )
+
+    val transcriptCleaner: com.x3phire.hundreddays.domain.TranscriptCleaner =
+        com.x3phire.hundreddays.data.OnDeviceTranscriptCleaner()
 }

@@ -19,14 +19,17 @@ import com.x3phire.hundreddays.domain.Intensity
 
 val Ink = Color(0xFF0B1F33)
 val InkMuted = Color(0xFF5B6F82)
-val BlueDeep = Color(0xFF1A4B8C)
-val BlueMid = Color(0xFF2F6FED)
-val BlueSoft = Color(0xFF7EB6F6)
-val BlueMist = Color(0xFFD7E8FA)
-val BlueEmpty = Color(0xFFEEF3F8)
+val BlueDeep = Color(0xFF0F367D)
+val BlueMid = Color(0xFF1E5FE6)
+val BlueSoft = Color(0xFF428DF5)
+val BlueMist = Color(0xFF90C2F9)
+val BlueEmpty = Color(0xFFDCE6F0)
+val CellBorder = Color(0xFFBACBDC)
+val CellBorderFuture = Color(0xFFCBD8E6)
+val CellFillFuture = Color(0xFFEAF1F8)
 val Paper = Color(0xFFF4F7FB)
 val PaperDeep = Color(0xFFE7EEF7)
-val TodayRing = Color(0xFF0B1F33)
+val TodayRing = BlueDeep
 
 private val LightColors = lightColorScheme(
     primary = BlueDeep,
@@ -109,6 +112,15 @@ fun Intensity.toCellColor(): Color =
         Intensity.MEDIUM -> BlueSoft
         Intensity.HIGH -> BlueMid
         Intensity.MAX -> BlueDeep
+    }
+
+fun Intensity.toBorderColor(): Color =
+    when (this) {
+        Intensity.EMPTY -> CellBorder
+        Intensity.LOW -> Color(0xFF6BAAF5)
+        Intensity.MEDIUM -> Color(0xFF2571E0)
+        Intensity.HIGH -> Color(0xFF1647B0)
+        Intensity.MAX -> Color(0xFF0B2556)
     }
 
 @Composable
